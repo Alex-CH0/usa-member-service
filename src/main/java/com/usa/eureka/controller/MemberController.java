@@ -12,8 +12,4 @@ public class MemberController {
         return "Hello!";
     }
 
-    @GetMapping("/actutest")
-    public String actutest() {
-        return "actutest!";
-    }
 }
