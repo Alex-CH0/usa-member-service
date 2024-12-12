@@ -1,19 +1,18 @@
 package com.usa.eureka.domain;
 
 
-import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
-@Table(name = "users")
+//@Entity
+//@Table(name = "users")
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User {
     // 추후 implements UserDetails 추가
     // TODO Setter DB 구축 후 삭제 예정
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
     private String email;
