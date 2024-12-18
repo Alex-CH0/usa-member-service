@@ -13,9 +13,9 @@ import java.util.Map;
 
 @Service
 @Slf4j
-public class kafkaConsumer {
+public class KafkaConsumer {
 
-    @KafkaListener(topics = "order-user-topic", groupId = "consumerGroupId")
+    @KafkaListener(topics = "order-user-topic", groupId = "user01")
     public void updateDeposit(String kafkaMessage) {
         log.info("Kafka Message: -> {}", kafkaMessage);
 
