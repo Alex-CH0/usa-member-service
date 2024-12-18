@@ -1,4 +1,4 @@
-package controller;
+package com.usa.eureka.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
