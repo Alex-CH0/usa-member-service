@@ -32,9 +32,9 @@ public class KafkaConsumer {
         String email = (String) map.get("email");
         User user = new User(email, "alex", 10000000L);
 
-        Long amountLeft = (Long) map.getOrDefault("amount", 0L);
+        long usedAmount = ((Number) map.get("amount")).longValue();
 
-        user.setDeposit(user.getDeposit() - amountLeft);
+        user.setDeposit(user.getDeposit() - usedAmount);
 
         log.info("User email: -> {}", user.getEmail());
         log.info("User nickname: -> {}", user.getNickname());

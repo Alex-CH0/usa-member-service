@@ -19,10 +19,10 @@ public class User {
 
     private String nickname;
 
-    private Long deposit;
+    private long deposit;
 
     @Builder
-    public User(String email, String nickname, Long deposit) {
+    public User(String email, String nickname, long deposit) {
         this.email = email;
         this.nickname = nickname;
         this.deposit = deposit;
