@@ -1,4 +1,4 @@
-package com.usa.eureka.domain;
+package com.usa.user.domain;
 
 
 import lombok.*;
